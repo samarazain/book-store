@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Book - Sumaya's Book Store</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="topnav">
+        <div class="logo">📚 Sumaya's Book Store </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Help.html">Help</a></li>
+            <li><a href="Guest.html" class="active">Guest Book</a></li>
+        </ul>
+        <div class="icons">
+            <span>🛒 (0)</span>
+            <span>👤</span>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>Guest Book</h1>
+        <p>Share your thoughts and read what others have to say about our books</p>
+    </div>
+
+    <section class="guest-section">
+        <div class="container">
+            <div class="guest-form-container">
+                <h2>Leave a Review</h2>
+                <form class="guest-form">
+                    <div class="form-group">
+                        <label for="guest-name">Your Name</label>
+                        <input type="text" id="guest-name" name="guest-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="guest-email">Email Address</label>
+                        <input type="email" id="guest-email" name="guest-email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Rating</label>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">★</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">★</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">★</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">★</label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1">★</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="book-category">Book Category (Optional)</label>
+                        <select id="book-category" name="book-category">
+                            <option value="">Select a category</option>
+                            <option value="business">Business</option>
+                            <option value="communication">Communication</option>
+                            <option value="critical-thinking">Critical Thinking</option>
+                            <option value="discipline">Discipline</option>
+                            <option value="human-behavior">Human Behavior</option>
+                            <option value="personal-finance">Personal Finance</option>
+                            <option value="philosophy">Philosophy</option>
+                            <option value="productivity">Productivity</option>
+                            <option value="self-help">Self Help</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="review-message">Your Review</label>
+                        <textarea id="review-message" name="review-message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Submit Review</button>
+                </form>
+            </div>
+            
+           
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sumaya's Book Store</h3>
+                <p>Your destination for knowledge and inspiration</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="Help.html">Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Phone: 0614439475</p>
+                <p>Email: info@sumayabooks.com</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
